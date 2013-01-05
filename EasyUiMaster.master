@@ -1,0 +1,38 @@
+﻿<%@ Master Language="VB" CodeFile="EasyUiMaster.master.vb" Inherits="EasyUiMaster" %>
+
+<%@ Register src="themes/themeselector.ascx" tagname="themeselector" tagprefix="uc1" %>
+<%@ Register src="Scripts/jquery/jquery.ascx" tagname="jquery" tagprefix="uc2" %>
+<%@ Register src="Scripts/EasyUi/ctrlEasyUi.ascx" tagname="ctrlEasyUi" tagprefix="uc3" %>
+
+<!DOCTYPE html>  
+<html>  
+<head runat="server">
+   
+      <meta charset="UTF-8">  
+      <title>Basic Tabs - jQuery EasyUI Demo</title>  
+
+
+
+
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+        <uc2:jquery ID="jquery1" runat="server" />
+    
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <uc3:ctrlEasyUi ID="ctrlEasyUi1" runat="server" />
+
+    <uc1:themeselector ID="themeselector1" runat="server" />
+    </form>
+</body>
+</html>

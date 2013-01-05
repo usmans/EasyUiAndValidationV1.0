@@ -1,0 +1,2 @@
+﻿<%@ Control Language="VB" AutoEventWireup="false" CodeFile="jquery.ascx.vb" Inherits="Scripts_jquery" %>
+<script src="<%= ResolveUrl("~/Scripts/jquery/jquery-1.8.0.min.js") %>" type="text/javascript"></script>
